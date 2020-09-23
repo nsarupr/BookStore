@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class InventoryLogService {
 
-    @Value("default.creation.retry")
+    @Value("${default.creation.retry}")
     private int defaultCreationRetry;
 
     private InventoryLogRepository inventoryLogRepository;
